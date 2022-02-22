@@ -1,0 +1,57 @@
+.header {
+   &__container {
+      position:absolute;
+      top: 6.4rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+   }
+   &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 9.4rem;
+   }
+   &__menu {
+      display: flex;
+   }
+   &__logo {
+      width: 7.9rem;
+      height: 2.8rem;
+      margin-right: 3.9rem;
+      cursor: pointer;
+   }
+   &__nav-items {
+      display: flex;
+      align-items: center;
+      a {
+         font-size: 1.4rem;
+         line-height: 114%;
+         cursor: pointer;
+      }
+   }
+   &__nav-item:not(:last-child) {
+      margin-right: 2.4rem;
+   }
+   &__menu-burger {
+      width: 6rem;
+      height: 6rem;
+   }
+   &__menu-burger,
+   &__menu-close,
+   &__nav-mobile {
+      display: none;
+   }
+   &__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+         width: 1.7rem;
+         height: 1.7rem;
+         cursor: pointer;
+      }
+      a:not(:last-child) {
+         margin-right: 2.1rem;
+      }
+   }
+}

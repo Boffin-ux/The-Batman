@@ -1,0 +1,68 @@
+* {
+   box-sizing: border-box;
+      &::before,
+      &::after {
+         box-sizing: border-box;
+      }
+      &:focus:not(:focus-visible) {
+         outline: none;
+      }
+}
+
+html,
+body {
+   font-family: 'Roboto', sans-serif;
+   color: #FFFFFF;
+   font-weight: normal;
+   scroll-behavior: smooth;
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+ul {
+   padding-left: 0;
+
+   li {
+      list-style: none;
+      cursor: default;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+}
+
+.sprite-icon {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.container {
+   width: 114rem;
+   margin: 0 auto;
+}
+
+.burger-menu {
+   fill: #FFFFFF;
+}

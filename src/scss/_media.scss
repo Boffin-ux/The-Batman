@@ -1,0 +1,111 @@
+@media (max-width: 62em) {
+   .container {
+      width: 100%;
+      padding: 0 6rem;
+      margin: 0;
+   }
+}
+@media (max-width: 48em) {
+   .header {
+      position: relative;
+
+      &__menu,
+      &__nav-mobile,
+      &__container {
+         flex-direction: column;
+         align-items: center;
+         margin: 0;
+      }
+      &__logo {
+         margin: 0;
+         margin-bottom: 3.4rem;
+         margin-top: 3.8rem;
+      }
+      &__nav {
+         display: none;
+      }
+      &__wrap {
+         display: none;
+         position: absolute;
+         top: 0;
+         right: 0;
+         transform: translate(0%, -25%);
+         width: 66%;
+         background-color: #151515;
+         padding-bottom: 4rem;
+         flex-direction: column;
+         z-index: 10;
+      }
+      &__menu-burger {
+         display: flex;
+         position: absolute;
+         right: 0;
+         top: 0;
+         transform: translate(-50%, -50%);
+      }
+      &__nav-mobile {
+         display: flex;
+         font-size: 1.4rem;
+         line-height: 114%;
+         margin-top: 2.2rem;
+         a:not(:last-child) {
+            margin-bottom: 1.7rem;
+         }
+      }
+      &__menu-close {
+         position: absolute;
+         top: 3.8rem;
+         right: 3.8rem;
+         display: flex;
+         width: 2.3rem;
+         height: 2.3rem;
+      }
+   }
+   .main { 
+   &__description-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   &__promo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   &__button-play {
+      margin-bottom: 4rem;
+      margin-left: 0;
+   }
+   &__button {
+      margin-bottom: 4.4rem;
+   }
+   &__trailers {
+      max-width: 100%;
+   }
+   }
+   .footer{
+      &__container {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__copyright {
+         padding-top: 2.4rem;
+      }
+   }
+   .modal {
+      padding: 3rem;
+      &__inner {
+         width: 100%;
+         height: 40rem;
+      }
+   }
+}
+@media (max-width: 30em) {
+   .trailers {
+      &__wrap {
+         width: 20rem;
+      }
+      &__slider-btn {
+         display: none;
+      }
+   }
+}

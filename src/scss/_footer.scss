@@ -1,0 +1,26 @@
+.footer {
+   flex-shrink: 0;
+   background: #030102;
+   font-weight: normal;
+   font-size: 1.4rem;
+   line-height: 143%;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+   }
+   &__copyright {
+      cursor:default;
+      color: #686767;
+   }
+   &__menu {
+      display: flex;
+      li:not(:last-child) {
+         padding-right: 2.5rem;
+      }
+      a {
+         color: #686767;
+      }
+   }
+}

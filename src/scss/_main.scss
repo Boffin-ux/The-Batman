@@ -1,0 +1,118 @@
+@import "_trailers";
+
+.main {
+   flex: 1 0 auto;
+   padding-top: 18.7rem;
+   padding-bottom: 10.4rem;
+   background-image: url('../img/background.jpg');
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: top;
+   background-size: cover;
+
+   &__container {
+      font-size: 1.4rem;
+      line-height: 114%;
+   }
+   &__rating {
+      cursor: default;
+   }
+   &__rating-wrap {
+      display: flex;
+      align-items: center;
+   }
+   &__rating-stars {
+      display: flex;
+      align-items: center;
+      margin-right: .9rem;
+   }
+   &__rating-title {
+      padding-bottom: 1.6rem;
+   }
+   &__rating-star {
+      width: 1.2rem;
+      height: 1.2rem;
+      flex-shrink: 0;
+      cursor: pointer;
+   }
+   &__rating-star:not(:last-child) {
+      margin-right: .4rem;
+   }
+   &__rating-number {
+      font-size: 1.2rem;
+      line-height: 117%;
+   }
+   &__header {
+      font-family: 'MuseoSansCyrl', sans-serif;
+      font-size: 7.6rem;
+      line-height: 119%;
+      padding: 1rem 0;
+   }
+   &__description-wrap {
+      display: flex;
+      align-items: center;
+   }
+   &__description {
+      line-height: 150%;
+      max-width: 53rem;
+      margin-bottom: 4rem;
+   }
+   &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #151515;
+      border-radius: .8rem;
+      padding: 2.2rem 0;
+      max-width: 24.5rem;
+      margin-bottom: 8.8rem;
+   }
+   &__button-play {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 13.2rem;
+      height: 13.2rem;
+      margin-left: 33.1rem;
+      border-radius: 50%;
+      background-color: #391917;
+      cursor: pointer;
+   }
+   &__button-dark {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background-color: #151515;
+   }
+   &__button-light {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.5rem;
+      height: 4rem;
+   }
+}
+.star {
+   stroke: #FFFFFF;
+   stroke-width: 0.5;
+   fill: #151515;
+}
+.star:hover {
+   stroke: #151515;
+   fill: #FFFFFF;
+}
+.star--active {
+   .star {
+      stroke: #151515;
+      fill: #FFFFFF;
+   }
+}
+.sprite-icon {
+   &.arrow {
+      stroke: #151515;
+      fill: #FFFFFF;
+   }
+}
